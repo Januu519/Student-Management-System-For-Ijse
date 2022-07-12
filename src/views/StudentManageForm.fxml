@@ -2,6 +2,7 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -16,7 +17,7 @@
             <Image url="@../assets/5514.jpg" />
          </image>
       </ImageView>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" height="582.0" layoutX="-26.0" layoutY="-26.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="917.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="582.0" layoutX="6.0" layoutY="5.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="917.0" />
       <JFXTextField fx:id="studentId" layoutX="154.0" layoutY="162.0" prefHeight="25.0" prefWidth="187.0" />
       <Text layoutX="51.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Id :">
          <font>
@@ -53,35 +54,9 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </Text>
-      <JFXButton layoutX="531.0" layoutY="271.0" onAction="#addBtn" prefHeight="41.0" prefWidth="187.0" style="-fx-background-color: #1B9CFC" text="Add Student">
+      <Text fill="#0fb279" layoutX="51.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Students" wrappingWidth="344.4375">
          <font>
-            <Font name="System Bold" size="16.0" />
-         </font>
-      </JFXButton>
-      <JFXButton layoutX="531.0" layoutY="341.0" onAction="#updateBtn" prefHeight="41.0" prefWidth="187.0" style="-fx-background-color: #1B9CFC" text="Update Student">
-         <font>
-            <Font name="System Bold" size="16.0" />
-         </font>
-      </JFXButton>
-      <JFXButton layoutX="531.0" layoutY="411.0" onAction="#deleteBtn" prefHeight="41.0" prefWidth="187.0" style="-fx-background-color: #1B9CFC" text="Delete Student">
-         <font>
-            <Font name="System Bold" size="16.0" />
-         </font>
-      </JFXButton>
-      <JFXTextField fx:id="searchStudentId" layoutX="480.0" layoutY="40.0" prefHeight="25.0" prefWidth="187.0" />
-      <Text layoutX="304.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Student Id :">
-         <font>
-            <Font name="System Bold" size="19.0" />
-         </font>
-      </Text>
-      <JFXButton layoutX="677.0" layoutY="38.0" onAction="#searchBtn" prefHeight="41.0" prefWidth="120.0" style="-fx-background-color: #1B9CFC" text="Search">
-         <font>
-            <Font name="System Bold" size="16.0" />
-         </font>
-      </JFXButton>
-      <Text fill="#4a0909" layoutX="32.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Student">
-         <font>
-            <Font name="System Bold" size="25.0" />
+            <Font name="System Bold Italic" size="32.0" />
          </font>
       </Text>
       <JFXTextField fx:id="studentId1" layoutX="154.0" layoutY="162.0" prefHeight="25.0" prefWidth="187.0" />
@@ -120,98 +95,68 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </Text>
-      <JFXButton layoutX="531.0" layoutY="271.0" onAction="#addBtn" prefHeight="41.0" prefWidth="187.0" style="-fx-background-color: #1B9CFC" text="Add Student">
+      <JFXButton layoutX="584.0" layoutY="508.0" onAction="#deleteBtn" prefHeight="41.0" prefWidth="187.0" style="-fx-background-color: #33d9b2;" text="Delete Student">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="531.0" layoutY="341.0" onAction="#updateBtn" prefHeight="41.0" prefWidth="187.0" style="-fx-background-color: #1B9CFC" text="Update Student">
-         <font>
-            <Font name="System Bold" size="16.0" />
-         </font>
-      </JFXButton>
-      <JFXButton layoutX="531.0" layoutY="411.0" onAction="#deleteBtn" prefHeight="41.0" prefWidth="187.0" style="-fx-background-color: #1B9CFC" text="Delete Student">
-         <font>
-            <Font name="System Bold" size="16.0" />
-         </font>
-      </JFXButton>
-      <JFXTextField fx:id="searchStudentId1" layoutX="480.0" layoutY="40.0" prefHeight="25.0" prefWidth="187.0" />
-      <Text layoutX="304.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Student Id :">
+      <JFXTextField fx:id="searchStudentId1" layoutX="708.0" layoutY="65.0" prefHeight="25.0" prefWidth="187.0" />
+      <Text fill="#6f00ff" layoutX="544.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Student Id :">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
       </Text>
-      <JFXButton layoutX="677.0" layoutY="38.0" onAction="#searchBtn" prefHeight="41.0" prefWidth="120.0" style="-fx-background-color: #1B9CFC" text="Search">
+      <JFXButton layoutX="422.0" layoutY="73.0" onAction="#searchBtn" prefHeight="41.0" prefWidth="120.0" style="-fx-background-color: #33d9b2;" text="Search">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </JFXButton>
-      <Text fill="#4a0909" layoutX="32.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Student">
-         <font>
-            <Font name="System Bold" size="25.0" />
-         </font>
-      </Text>
       <JFXTextField fx:id="studentId2" layoutX="154.0" layoutY="162.0" prefHeight="25.0" prefWidth="187.0" />
-      <Text layoutX="51.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Id :">
+      <Text fill="#f803dc" layoutX="51.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Id :">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Text>
       <JFXTextField fx:id="studentName2" layoutX="155.0" layoutY="223.0" prefHeight="25.0" prefWidth="187.0" />
-      <Text layoutX="51.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :">
+      <Text fill="#eb05df" layoutX="51.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Text>
       <JFXTextField fx:id="studentMail2" layoutX="155.0" layoutY="283.0" prefHeight="25.0" prefWidth="187.0" />
-      <Text layoutX="51.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-Mail">
+      <Text fill="#f534d5" layoutX="51.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-Mail:">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Text>
       <JFXTextField fx:id="studentContact2" layoutX="155.0" layoutY="340.0" prefHeight="25.0" prefWidth="187.0" />
-      <Text layoutX="51.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact :">
+      <Text fill="#ff00f2" layoutX="51.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact :">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Text>
       <JFXTextField fx:id="studentAddress2" layoutX="155.0" layoutY="394.0" prefHeight="25.0" prefWidth="187.0" />
-      <Text layoutX="51.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address :">
+      <Text fill="#ff08f3" layoutX="51.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address :">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Text>
       <JFXTextField fx:id="studentNIC2" layoutX="155.0" layoutY="447.0" prefHeight="25.0" prefWidth="187.0" />
-      <Text layoutX="51.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIC :">
+      <Text fill="#ff13f7" layoutX="51.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIC :">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Text>
-      <JFXButton layoutX="531.0" layoutY="271.0" onAction="#addBtn" prefHeight="41.0" prefWidth="187.0" style="-fx-background-color: #1B9CFC" text="Add Student">
+      <JFXButton layoutX="95.0" layoutY="508.0" onAction="#addBtn" prefHeight="41.0" prefWidth="187.0" style="-fx-background-color: #33d9b2;" text="Add Student">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="531.0" layoutY="341.0" onAction="#updateBtn" prefHeight="41.0" prefWidth="187.0" style="-fx-background-color: #1B9CFC" text="Update Student">
+      <JFXButton layoutX="328.0" layoutY="508.0" onAction="#updateBtn" prefHeight="41.0" prefWidth="187.0" style="-fx-background-color: #33d9b2;" text="Update Student">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="531.0" layoutY="411.0" onAction="#deleteBtn" prefHeight="41.0" prefWidth="187.0" style="-fx-background-color: #1B9CFC" text="Delete Student">
-         <font>
-            <Font name="System Bold" size="16.0" />
-         </font>
-      </JFXButton>
-      <JFXTextField fx:id="searchStudentId2" layoutX="480.0" layoutY="40.0" prefHeight="25.0" prefWidth="187.0" />
-      <Text layoutX="304.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Student Id :">
-         <font>
-            <Font name="System Bold" size="19.0" />
-         </font>
-      </Text>
-      <JFXButton layoutX="677.0" layoutY="38.0" onAction="#searchBtn" prefHeight="41.0" prefWidth="120.0" style="-fx-background-color: #1B9CFC" text="Search">
-         <font>
-            <Font name="System Bold" size="16.0" />
-         </font>
-      </JFXButton>
+      <Separator layoutX="6.0" layoutY="53.0" prefHeight="7.0" prefWidth="902.0" />
    </children>
 </AnchorPane>
