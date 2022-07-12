@@ -3,6 +3,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.io.IOException;
+
 public class AppInitializer extends Application {
 
     public static void main(String[] args) {
@@ -10,10 +12,10 @@ public class AppInitializer extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage) {
-        primaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("view/studentForm.fxml"))));
+    public void start(Stage primaryStage) throws IOException {
+        primaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("views/StudentManageForm.fxml"))));
         primaryStage.show();
     }
 
     }
-}
+
